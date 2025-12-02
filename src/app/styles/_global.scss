@@ -36,21 +36,18 @@ body {
 .h4,
 .h5,
 .h6 {
-
-}
-
-
-.h1 {
-  font-size: clamp(1.875rem, 1.154rem + 3.6vw, 4.375rem);
-
+  font-weight: 600
 }
 
 .h2 {
-  font-size: clamp(1.875rem, 1.551rem + 1.62vw, 3rem);
+  font-size: fluid(34, 28);
+  color: var(--colro-dark);
 }
 
 .h3 {
-  font-size: clamp(1rem, 0.773rem + 1.14vw, 1.625rem);
+  font-size: 24px;
+  text-transform: uppercase;
+  color: var(--color-black);
 }
 
 a,
