@@ -1,0 +1,15 @@
+.skills {
+  padding-bottom: fluid(90, 40);
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+}

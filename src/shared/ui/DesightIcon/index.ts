@@ -1,0 +1,1 @@
+export { DesignIcon } from './DesignIcon.tsx'
