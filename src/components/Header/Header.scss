@@ -28,12 +28,6 @@
     justify-content: space-between;
     align-items: center;
     column-gap: fluid(50, 20);
-
-    &__link {
-      @include hover {
-        color: var(--color-gray);
-      }
-    }
   }
 
   @include mobile {

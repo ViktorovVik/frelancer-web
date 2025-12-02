@@ -1,0 +1,47 @@
+.hero {
+  padding-top: fluid-to-laptop(141, 80);
+  padding-bottom: fluid(90, 40);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+    "name photo"
+    "text photo";
+    gap: 20px 40px;
+    align-items: start;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "name"
+      "text"
+      "photo";
+      gap: 20px 0;
+    }
+  }
+
+  &__name {
+    grid-area: name;
+    font-size: fluid(44, 30);
+    align-self: end;
+  }
+
+  &__position {
+    display: block;
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    grid-area: text;
+    max-width: 570px;
+    line-height: 2;
+  }
+
+  &__picture {
+    grid-area: photo;
+  }
+}
