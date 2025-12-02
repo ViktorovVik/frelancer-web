@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
+import { Skills } from "../components/Skills";
 
 
 const Layout = () => {
@@ -8,6 +9,7 @@ const Layout = () => {
       <Header />
       <main>
         <Hero />
+        <Skills />
       </main>
     </>
   );
