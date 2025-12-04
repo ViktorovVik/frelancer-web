@@ -1,0 +1,15 @@
+.projects {
+  padding-block: fluid(90, 40);
+
+  &__title {
+    margin-bottom: fluid(70, 30);
+    text-align: center;
+  }
+
+  &__list {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+}
