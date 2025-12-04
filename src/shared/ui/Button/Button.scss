@@ -1,0 +1,59 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: fluid(16, 12) fluid(32, 24);
+
+  font-family: inherit;
+  font-size: fluid(18, 16);
+  font-weight: 500;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all var(--transition-duration);
+
+  text-decoration: none; // для ссылок
+
+  &--primary {
+    background: var(--color-primary);
+    color: white;
+
+    &:hover {
+      background: var(--color-primary-dark);
+    }
+  }
+
+  &--secondary {
+    background: var(--color-secondary);
+    color: white;
+
+    &:hover {
+      background: var(--color-secondary-dark);
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+
+    &:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
