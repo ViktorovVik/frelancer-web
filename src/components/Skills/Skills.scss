@@ -1,5 +1,6 @@
 .skills {
-  padding-bottom: fluid(90, 40);
+  padding-block: fluid(90, 40);
+  background-color: var(--color-light);
 
   &__list {
     display: flex;

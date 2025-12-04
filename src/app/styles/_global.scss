@@ -1,3 +1,6 @@
+@use './helpers/media' as *;
+@use './helpers/functions' as *;
+
 *,
 ::before,
 ::after {
@@ -29,6 +32,11 @@ body {
   }
 }
 
+.h1,
+.h2,
+.h3 {
+  font-weight: 600;
+}
 
 .h1,
 .h2,
@@ -36,18 +44,24 @@ body {
 .h4,
 .h5,
 .h6 {
-  font-weight: 600
+  color: var(--color-black);
 }
 
 .h2 {
   font-size: fluid(34, 28);
-  color: var(--colro-dark);
 }
 
 .h3 {
   font-size: 24px;
   text-transform: uppercase;
-  color: var(--color-black);
+
+}
+
+.h4 {
+  font-size: 18px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-weight: 400;
 }
 
 a,

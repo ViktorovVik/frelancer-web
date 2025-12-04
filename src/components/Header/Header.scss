@@ -1,12 +1,21 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   padding-block: fluid-to-laptop(46, 25);
   width: 100%;
   background-color: var(--color-bg);
   z-index: 100;
+  animation-name: scrolling-header;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 100px 200px;
+
+
+  @keyframes scrolling-header {
+    to {
+      box-shadow: 0 0 1rem 0 var(--color-gray);
+    }
+  }
 
   &__inner {
     display: flex;

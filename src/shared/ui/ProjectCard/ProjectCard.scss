@@ -1,0 +1,40 @@
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  &__figure {
+    width: 100%;
+  }
+
+  &__wrapper {
+    margin-bottom: fluid-to-laptop(40, 20);
+  }
+
+  &__img {
+    transition: var(--transition-duration) ease;
+    will-change: transform;
+  }
+
+  &__title {
+    text-align: center;
+    transition: var(--transition-duration) ease;
+  }
+
+  &__link {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+  }
+
+  @include hover {
+    .project-card__img {
+      transform: scale(1.05);
+    }
+
+    .project-card__title {
+      color: var(--color-gray);
+    }
+  }
+}
