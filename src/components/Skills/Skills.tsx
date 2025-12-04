@@ -13,7 +13,7 @@ export const Skills = ({className = ''}: SkillsProps) => {
     <section className={`skills ${className}`} aria-labelledby="skills-title">
       <div className="skills__inner container">
         <h2 className="visually-hidden" id="skills-title">My skills</h2>
-        <ul className="skills__list">
+        <ul className="skills__list" aria-label="My skills">
           {SKILL_DATA.map((skill) => (
             <SkillCard
               key={skill.id}
