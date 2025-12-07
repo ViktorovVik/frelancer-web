@@ -17,7 +17,7 @@ export const Projects = ({className = ''}: ProjectsProps) => {
         <h3 className="visually-hidden">My projects list</h3>
         <ul className="projects__list" aria-label="My projects">
           {PROJECTS_DATA.map((item) => (
-            <ProjectCard img={item.img} title={item.title} alt={item.alt}/>
+            <ProjectCard key={item.id} img={item.img} title={item.title} alt={item.alt}/>
           ))}
         </ul>
       </div>
