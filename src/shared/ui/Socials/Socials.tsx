@@ -1,5 +1,5 @@
 import './Socials.scss';
-import { SOCIALS_DATA } from "../../constants/socials.ts";
+import { SOCIALS_DATA } from "../../../constants/socials.ts";
 
 interface SocialsProps {
   className?: string;
