@@ -1,5 +1,6 @@
 import './Button.scss';
-import { ReactNode, ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
+import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from 'react';
+import type { ReactNode } from 'react';
 
 interface ButtonAsButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   as?: 'button';
