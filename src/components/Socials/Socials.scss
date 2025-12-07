@@ -1,0 +1,11 @@
+.socials {
+  display: flex;
+  column-gap: fluid-to-laptop(61, 30);
+
+  .socials__link {
+    @include hover {
+      background: var(--color-primary);
+      color: white;
+    }
+  }
+}
