@@ -1,0 +1,32 @@
+.footer {
+  padding-block: fluid(90, 40);
+  background-color: var(--color-light);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: fluid-to-laptop(40, 25);
+  }
+
+  &__text {
+    font-size: 18px;
+    max-width: 296px;
+    text-align: center;
+  }
+
+  &__button {
+    margin-bottom: 40px;
+  }
+
+  &__cta {
+    color: var(--color-gray);
+    font-size: 14px;
+
+    &-text {
+      display: block;
+      text-align: center;
+    }
+  }
+}

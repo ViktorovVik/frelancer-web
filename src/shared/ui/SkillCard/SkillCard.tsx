@@ -6,7 +6,7 @@ interface SkillCardProps {
   description: string;
 }
 
-export const SkillCard = ({Icon, skill, description}: SkillCardProps) => {
+export const SkillCard = ({ Icon, skill, description }: SkillCardProps) => {
   return (
     <li className="skill-card">
       <figure className="skills-card__figure">
