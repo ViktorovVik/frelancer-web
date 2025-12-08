@@ -4,7 +4,8 @@
   justify-content: center;
   gap: 8px;
 
-  padding: fluid(16, 12) fluid(32, 24);
+  padding-block: 7px;
+  padding-inline: fluid-to-laptop(22, 18);
 
   font-family: inherit;
   font-size: fluid(18, 16);
@@ -19,17 +20,19 @@
   text-decoration: none; // для ссылок
 
   &--primary {
-    background: var(--color-primary);
-    color: white;
+    background: var(--colro-dark);
+    color: var(--color-light);
+    border-radius: 50px;
 
     &:hover {
-      background: var(--color-primary-dark);
+      background: var(--color-gray);
+      color: var(--colro-dark);
     }
   }
 
   &--secondary {
     background: var(--color-secondary);
-    color: white;
+    color: var(--color-light);
 
     &:hover {
       background: var(--color-secondary-dark);
@@ -38,11 +41,11 @@
 
   &--outline {
     background: transparent;
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+    color: var(--colro-dark);
+    border-color: var(--colro-dark);
 
     &:hover {
-      background: var(--color-primary);
+      background: var(--colro-dark);
       color: white;
     }
   }
