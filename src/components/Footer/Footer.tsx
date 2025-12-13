@@ -5,7 +5,7 @@ import {Socials} from "../../shared/ui/Socials";
 
 export const Footer = () => {
   return (
-    <footer className="footer" aria-labelledby="contacts-title">
+    <footer className="footer" id="contact" aria-labelledby="contacts-title">
       <div className="footer__inner container">
         <div className="footer__title">
           <h2 className="h2" id="contacts-title">Contacts</h2>

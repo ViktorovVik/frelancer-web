@@ -9,7 +9,7 @@ interface ProjectsProps {
 
 export const Projects = ({className = ''}: ProjectsProps) => {
   return (
-    <section className={`projects ${className}`} aria-labelledby="projects-title">
+    <section className={`projects ${className}`} id="works" aria-labelledby="projects-title">
       <div className="projects__inner container">
         <div className="projects__title">
           <h2 className="h2" id="projects-title">Portfolio</h2>

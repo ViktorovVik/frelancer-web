@@ -4,7 +4,7 @@ import heroMobile from '../../assets/hero-mobile.png'
 
 export const Hero = () => {
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section className="hero" id="about" aria-labelledby="hero-title">
       <div className="hero__inner container">
         <h1 className="visually-hidden" id="hero-title">Portfolio and my brand</h1>
         <p className="hero__name">Kelvin Kramer <strong className="hero__position">Designer & Developer</strong></p>
