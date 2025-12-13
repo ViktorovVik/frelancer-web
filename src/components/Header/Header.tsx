@@ -42,7 +42,7 @@ export const Header = () => {
               {navLinks.map((item) => (
                 <li key={item.label} className="nav__item">
                   <a
-                    href={item.href}
+                    href={item.id}
                     className="nav__link"
                     onClick={toggleMenu}
                   >{item.label}</a>
